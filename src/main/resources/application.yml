@@ -2,10 +2,10 @@ spring:
   application:
     name: kg-free-places-monitor
   mail:
-    host: ${MAIL_HOST:smtp-relay.brevo.com}
-    port: ${MAIL_PORT:587}
-    username: ${MAIL_USERNAME:997d43001@smtp-brevo.com}
-    password: ${MAIL_PASSWORD:qZK217aXyLAnbrMW}
+    host: ${MAIL_HOST}
+    port: ${MAIL_PORT}
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
     properties:
       mail:
         smtp:
@@ -23,8 +23,8 @@ monitor:
   schedule:
     cron: "0 */5 * * * *"  # every 5 minutes
   email:
-    from: akokoshqn@gmail.com
-    to: akokoshqn@gmail.com
+    from: no-reply@your-domain.com
+    to: you@your-domain.com, teammate@your-domain.com
     subject: "[KG] Free places status changed"
 
 logging:
